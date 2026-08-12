@@ -7,7 +7,7 @@
 start(_StartType, _StartArgs) ->
     Dispatch = cowboy_router:compile([
         {'_', [
-            {"/hello", kvstore_hello_handler, []}
+            {"/keys/:key", kvstore_key_handler, []}
         ]}
     ]),
     {ok, _} = cowboy:start_clear(
