@@ -15,8 +15,42 @@ $ rebar3 compile
 
 ## Run
 
+### Development
+
 ```sh
 $ rebar3 shell
+```
+
+### Production Release
+
+Build the release:
+
+```sh
+$ rebar3 release
+```
+
+Start the release:
+
+```sh
+$ ./_build/default/rel/kvstore/bin/kvstore start
+```
+
+Stop the release:
+
+```sh
+$ ./_build/default/rel/kvstore/bin/kvstore stop
+```
+
+Run in foreground (with console output):
+
+```sh
+$ ./_build/default/rel/kvstore/bin/kvstore foreground
+```
+
+Attach to a running node:
+
+```sh
+$ ./_build/default/rel/kvstore/bin/kvstore remote_console
 ```
 
 ## API
