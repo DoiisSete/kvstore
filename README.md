@@ -32,25 +32,7 @@ $ rebar3 release
 Start the release:
 
 ```sh
-$ ./_build/default/rel/kvstore/bin/kvstore start
-```
-
-Stop the release:
-
-```sh
-$ ./_build/default/rel/kvstore/bin/kvstore stop
-```
-
-Run in foreground (with console output):
-
-```sh
-$ ./_build/default/rel/kvstore/bin/kvstore foreground
-```
-
-Attach to a running node:
-
-```sh
-$ ./_build/default/rel/kvstore/bin/kvstore remote_console
+$ ./_build/default/rel/kvstore/bin/kvstore console
 ```
 
 ## API
